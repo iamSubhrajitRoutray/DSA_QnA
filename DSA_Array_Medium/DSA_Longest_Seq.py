@@ -25,12 +25,12 @@ def longest_sequence(arr):
         
     return print(longest)
             
-    
-
+            
 # Main Driver Code...
 array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
 
 longest_sequence(array)
+
 
 
 
@@ -68,9 +68,12 @@ def longest_sequence(arr):
         
     print(count)
 
+
 # Main Driver Code...
 array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
 longest_sequence(array)
+
+
 
 
 ''' OPTIMAL APPROACH -> '''
