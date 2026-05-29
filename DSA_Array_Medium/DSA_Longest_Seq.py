@@ -1,29 +1,111 @@
 '''Longest Consecutive Sequence in an Array'''
 
-def longest_sequence(arr):
+
+''' BRUTE FORCE -> '''
+
+def longest_sequence(arr): 
     
-    res = []
+    n = len(arr)
+    
+    longest = 0
+    
+    for i in range(n):
+        
+        num = arr[i]
+        
+        count = 1
+        
+        while num+1 in arr:
+            
+            count += 1
+            
+            num += 1
+            
+        longest = max(longest, count)
+        
+    return print(longest)
+            
+    
+
+# Main Driver Code...
+array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
+
+longest_sequence(array)
+
+
+
+''' BETTER APPROACH -> '''
+
+def longest_sequence(arr):
     
     n = len(arr)
     
     arr.sort()
     
-    i = 0
+    last_smaller = float('inf')
     
-    res.append(arr[i])
+    longest = 0
     
-    for i in range(n):
+    count = 0
+    
+    for i in range(0, n):
         
-        for j in range(i + 1, n):
+        num = arr[i]
+        
+        if num - 1 == last_smaller:
             
-            if arr[j] == arr[i] + 1:
-                
-                res.append(arr[j])
+            count += 1
+           
+            last_smaller = num
+            
+        elif num != last_smaller:
+            
+            count = 1
+            
+            last_smaller = num
         
-    print(f'Longest consecutive sequence : {res} with lenght : {len(res)}')
+        longest = max(longest, count)
+        
+    print(count)
+
+# Main Driver Code...
+array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
+longest_sequence(array)
 
 
-'''Code Run -> '''
-a = [0, 3, 7, 2, 5, 8, 4, 6, 1]
+''' OPTIMAL APPROACH -> '''
 
-longest_sequence(a)
+def longest_sequence(arr):
+    
+    n = len(arr) 
+    
+    my_set = set()
+    
+    for i in range(0, n):
+        
+        my_set.add(arr[i])
+    
+    longest = 0
+    
+    for num in my_set:
+        
+        if num - 1 not in my_set:
+           
+            x = num
+            
+            count = 1
+        
+        if x + 1 in my_set:
+            
+            count += 1
+           
+            x += 1
+        
+        longest = max(longest,count)
+    
+    print(longest)
+
+
+# Main Driver Code...
+array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
+longest_sequence(array)
