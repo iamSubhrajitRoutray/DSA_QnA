@@ -20,10 +20,10 @@ def longest_sequence(arr):
                 
                 res.append(arr[j])
         
-    print(f'{res}')
+    print(f'Longest consecutive sequence : {res} with lenght : {len(res)}')
 
 
 '''Code Run -> '''
-a = [100, 2, 200, 3, 1, 4]
+a = [0, 3, 7, 2, 5, 8, 4, 6, 1]
 
 longest_sequence(a)
