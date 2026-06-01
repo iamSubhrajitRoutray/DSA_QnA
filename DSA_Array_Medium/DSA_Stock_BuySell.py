@@ -7,124 +7,124 @@ If you cannot achieve any profit, return 0.'''
 
 
 
-'''DIRECT APPROACH'''
+''' DIRECT APPROACH '''
 
-# def stock(price):
+def stock(price):
     
-#     buy = min(price)
+    buy = min(price)
     
-#     sell = max(price)
+    sell = max(price)
     
-#     profit = sell - buy
+    profit = sell - buy
 
-#     print(f'The profit for today is : {profit}')
-
-
-# prices = [2, 1, 5, 3, 9,4]
-
-# stock(prices)
+    print(f'The profit for today is : {profit}')
 
 
+prices = [2, 1, 5, 3, 9,4]
 
-# '''BRUTE FORCE - 1'''
+stock(prices)
 
-# def buy(arr):
+
+
+''' BRUTE FORCE - 1 '''
+
+def buy(arr):
     
-#     l = len(arr)
+    l = len(arr)
     
-#     buy = l
+    buy = l
     
-#     for i in range(0, l):
+    for i in range(0, l):
         
-#         if arr[i] < buy:
-#             buy = arr[i]
+        if arr[i] < buy:
+            buy = arr[i]
     
-#     return buy
+    return buy
 
 
-# def sell(arr):
+def sell(arr):
    
-#     l = len(arr)
+    l = len(arr)
     
-#     sell = 0
+    sell = 0
     
-#     for i in range(0, l):
+    for i in range(0, l):
        
-#         if arr[i] > sell:
-#             sell = arr[i]
+        if arr[i] > sell:
+            sell = arr[i]
     
-#     return sell
+    return sell
 
 
-# def profit(arr):
+def profit(arr):
   
-#     profit = sell(arr) - buy(arr)
+    profit = sell(arr) - buy(arr)
   
-#     print(f'The profit for today is {profit}.')
+    print(f'The profit for today is {profit}.')
 
 
 
-# prices = [2, 4, 6, 3, 8, 1, 10, 5, 7, 9]
+prices = [2, 4, 6, 3, 8, 1, 10, 5, 7, 9]
 
-# profit(prices)
-
-
+profit(prices)
 
 
-# '''OPTIMAL APPROACH - 1'''
 
-# def stock(prices):
+
+''' OPTIMAL APPROACH - 1 '''
+
+def stock(prices):
     
-#     sell = 0
+    sell = 0
     
-#     buy = float('inf')
+    buy = float('inf')
     
     
-#     for price in prices:
+    for price in prices:
         
-#         if price < buy:
+        if price < buy:
             
-#             buy = price
+            buy = price
         
-#         sell = max(sell, price - buy)
+        sell = max(sell, price - buy)
     
-#     print(sell)
+    print(sell)
     
 
-# prices = [2, 4, 6, 3, 8, 1, 10, 5, 7, 9]
+prices = [2, 4, 6, 3, 8, 1, 10, 5, 7, 9]
 
-# stock(prices)
+stock(prices)
 
 
-# '''BRUTE FORCE - 2'''
+''' BRUTE FORCE - 2 '''
 
-# def stock(price):
+def stock(price):
     
-#     l = len(price)
+    l = len(price)
     
-#     max_profit = 0
+    max_profit = 0
     
-#     for i in range(0, l):
+    for i in range(0, l):
         
-#         for j in range(i + 1, l):
+        for j in range(i + 1, l):
             
-#             if price[j] > price[i]:
+            if price[j] > price[i]:
                 
-#                 p = price[j] - price[i]
+                p = price[j] - price[i]
                 
-#                 max_profit = max(max_profit, p)
+                max_profit = max(max_profit, p)
     
-#     print(f'Profit : {max_profit}')
+    print(f'Profit : {max_profit}')
 
 
 
-# prices = [1,2,3,4,5]
+prices = [1,2,3,4,5]
 
-# stock(prices)
+stock(prices)
 
 
 
-'''OPTIMAL - 2'''
+''' OPTIMAL - 2 '''
 
 def stock(price):
     

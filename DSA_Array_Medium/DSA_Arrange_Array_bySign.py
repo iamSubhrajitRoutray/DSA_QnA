@@ -8,35 +8,35 @@ you must return an array of alternately positive and negative values.'''
 
 '''BRUTE FORCE'''
 
-# def re_arrange(arr):
+def re_arrange(arr):
     
-#     n = len(arr)
+    n = len(arr)
     
-#     pos = []
+    pos = []
     
-#     neg = []
+    neg = []
     
-#     for i in range(n):
+    for i in range(n):
         
-#         if arr[i] > 0:
+        if arr[i] > 0:
         
-#             pos.append(arr[i])
+            pos.append(arr[i])
         
-#         else:
+        else:
         
-#             neg.append(arr[i])
+            neg.append(arr[i])
         
-#     for i in range(n // 2):
+    for i in range(n // 2):
         
-#         arr[2 * i] = pos[i]
+        arr[2 * i] = pos[i]
         
-#         arr[2 * i + 1] = neg[i]
+        arr[2 * i + 1] = neg[i]
     
-#     return print(arr)
+    return print(arr)
 
-# array = [1, 2, -3, -1, 4]
+array = [1, 2, -3, -1, 4]
 
-# re_arrange(array)
+re_arrange(array)
 
 
 

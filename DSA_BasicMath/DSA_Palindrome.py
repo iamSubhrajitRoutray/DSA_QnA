@@ -1,4 +1,4 @@
-'''Check if a number is Palindrome or Not'''
+'''Check if a number is Palindrome or not'''
 
 def palindrome(n):
     
@@ -23,13 +23,14 @@ def palindrome(n):
 
 
 # Main function
+
 num = int(input('enter the number: '))
 
 check_num = palindrome(num)
 
 if check_num == num:
     
-    print(f'The given number {num} is a Palindrome.')
+    print(f'{num} is a Palindrome.')
 
 else:
-    print(f'The number {num} is not a Palindrome.')
+    print(f'{num} is not a Palindrome.')

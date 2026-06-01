@@ -1,6 +1,7 @@
 '''Count frequency of each element in the array'''
 
 # defining the function
+
 def frequency(arr, num):
     
     visited = [False] * num     # making an array to keep in check if we've visited that num/index

@@ -4,32 +4,39 @@ If there are k elements after removing the duplicates,
 then the first k elements of the array should hold the final result.
 It does not matter what you leave beyond the first k elements.'''
 
-# BRUTE FORCE APPROACH ->
 
-#'''def remove_duplicate(arr):
+
+''' BRUTE FORCE APPROACH -> '''
+
+def remove_duplicate(arr):
     
-#     n = len(arr)
+    n = len(arr)
     
-#     freq_list = {}
+    freq_list = {}
     
-#     for i in range(n):
+    for i in range(n):
     
-#         freq_list[arr[i]] = 0
-#     j = 0
-    
-#     for key in freq_list:
+        freq_list[arr[i]] = 0
         
-#         arr[j] = key
-#         j += 1
+    j = 0
     
-#     return print(f'The final number of elements in the array is : {j}.')
+    for key in freq_list:
+        
+        arr[j] = key
+        
+        j += 1
+    
+    return print(f'The final number of elements in the array is : {j}.')
 
-# array = [1,1,2,2,2,3,3,3,3,4]
+array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
 
-# remove_duplicate(array)'''
+remove_duplicate(array)
 
 
-# #OPTIMAL APPROACH ->
+
+
+
+''' OPTIMAL APPROACH -> '''
 
 def duplicate(arr):
     
@@ -42,18 +49,20 @@ def duplicate(arr):
         return 1
     
     while j < n:
+        
         if arr[j] != arr[i]:
             
             i += 1
             
             arr[i], arr[j] = arr[j], arr[i]
+        
         j += 1
     
     return print(f'The final no. of elements in the array is : {i + 1}')
     
     
 
-array = [1,1,2,2,2,3,3,3,3,4]
+array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
 
 duplicate(array)
 

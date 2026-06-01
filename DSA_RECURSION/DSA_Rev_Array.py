@@ -1,6 +1,6 @@
 '''Reverse a given Array'''
 
-'''def reverse_array(arr):
+def reverse_array(arr):
     
     # Get the length of the input array
     l = len(arr)
@@ -12,14 +12,14 @@
     for i in range(l):
         
         # Place elements from the end of arr into the start of n_arr
-        n_arr[i] = arr[l-i-1]
+        n_arr[i] = arr[l - i - 1]
         
      # Return the reversed array    
-    return n_arr'''
+    return n_arr
 
 
-'''# Main code to reverse an array/list ->
-num = int(input('Enter the lenght of the array: '))
+# Main code to reverse an array/list ->
+num = int(input('Enter array lenght : '))
 new_arr = []
 
 for i in range(num):
@@ -31,18 +31,18 @@ print(f'Your given list is: ',new_arr)
 
 rev_arr = reverse_array(new_arr)
 
-print(f'The reverse of your given list is: ',rev_arr)'''
+print(f'The reverse of your given list is: ',rev_arr)
     
 
-'''# Driver code for an given array ->
-new = [10,20,30,40,50,60,70,80,90,100]
+# Driver code for an given array ->
+new = [10, 20 ,30, 40, 50, 60, 70, 80, 90, 100]
 
 rev = reverse_array(new)
 
-print(rev)'''
+print(rev)
 
 
-# METHOD 02 -> In-Build Python Function Module
+'''In-Build Python Function Module'''
 
 # Function to reverse the array using slicing
 def reverse_array(arr):
@@ -64,6 +64,7 @@ print(rev)
 
 
 # HOW SLICING WORKS..!?
+
 '''Python Slicing — How It Actually Works
 
 Slicing returns a new sequence (it does NOT modify the original—unless you assign back).

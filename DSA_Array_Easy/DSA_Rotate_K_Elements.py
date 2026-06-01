@@ -1,6 +1,8 @@
 '''Given an array of integers, rotating array of elements by k elements either left or right.'''
 
-# BRUTE FORCE APPROACH -> by POP and INSERT
+
+''' BRUTE FORCE APPROACH -> by POP and INSERT '''
+
 def rotate_array(arr, k, direction):
     
     n = len(arr)
@@ -30,33 +32,38 @@ def rotate_array(arr, k, direction):
     print(arr)
      
 
-'''# Driver Code ->   
-# array = [1,2,3,4,5,6,7]
+# Main/Driver Code ->   
+array = [1,2,3,4,5,6,7]
 
-# rotate_array(array, 2,'left')
+rotate_array(array, 2,'left')
 
 
 
-# # BY SLICING -> BETTER APPROACH
 
-# def rotate_array(arr, k):
+
+''' BY SLICING -> BETTER APPROACH '''
+
+def rotate_array(arr, k):
  
-#     n = len(arr)
+    n = len(arr)
     
-#     k = k % n
+    k = k % n
     
-#     # By the use of default slicing, we can split and slice/cut the array by the k and n value
-#     arr[ : ] = arr[n - k :] + arr[: n - k]
+    # By the use of default slicing, we can split and slice/cut the array by the k and n value
+    arr[ : ] = arr[n - k :] + arr[: n - k]
     
-#     print(arr)
+    print(arr)
     
-# array = [1,2,3,4,5,6,7]
+array = [1,2,3,4,5,6,7]
 
-# rotate_array(array, 2)'''
+rotate_array(array, 2)
 
 
 
-'''# OPTIMAL APPROACH -> REVERSE ARRAY
+
+
+
+''' OPTIMAL APPROACH -> REVERSE ARRAY '''
 
 # function to reverse the given array.
 def reverse(arr, start, end):
@@ -100,4 +107,4 @@ def rotate_array(arr, k, direction):
 
 array = [1,2,3,4,5,6,7]
 
-rotate_array(array, 2,'left')'''
+rotate_array(array, 2,'left')

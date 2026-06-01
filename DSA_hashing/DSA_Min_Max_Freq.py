@@ -21,11 +21,14 @@ def frequency(arr, num):
         
         # Skip already processed elements
         if visted[i]:
+        
             continue
         
         # Count frequency of arr[i]
         count = 1
+        
         for j in range(i + 1, num):
+        
             if arr[i] == arr[j]:
                 
                 # Mark as visited
@@ -36,27 +39,34 @@ def frequency(arr, num):
         
         # Update the max frequency
         if count > max_freq:
+        
             max_ele = arr[i]
+        
             max_freq = count
             
         # Update the min frequency   
         if count < min_freq:
+        
             min_ele = arr[i]
+        
             min_freq = count
             
         # print all the elemnets with their respective frequency
         print(f'{arr[i]} : {count}')
         
     # print the max and min element
-    print(f'The element with maximum freq is {max_ele} having {max_freq} no. of occurence')
+    print(f'Element with maximum freq is {max_ele} with {max_freq} no. of occurence')
     
-    print(f'The element with minimum freq is {min_ele} having {min_freq} no. of occurence')
+    print(f'Element with minimum freq is {min_ele} with {min_freq} no. of occurence')
     
 
 # Main/Driver code
-arr = [1,3,1,15,3,1,5,1]
+
+arr = [1, 3, 1, 15, 3, 1, 5, 1]
+
 # Get array length
 n = len(arr)
+
 # Function call
 frequency(arr, n)
             

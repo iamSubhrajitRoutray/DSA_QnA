@@ -1,7 +1,7 @@
 '''Reverse Digits of A Number'''
 
 # Function to reverse digits of a number
-def Reverse_Number(n):
+def reverse_number(n):
     # Variable to store the reversed number
     rev = 0
     
@@ -22,10 +22,10 @@ def Reverse_Number(n):
 
 # Main function; driver code
 
-num = int(input('Enter your number: '))
+num = int(input('Enter the number: '))
 
-print(f'Your number is: {num}')
+print(f'Your number : {num}')
 
-rev_num = Reverse_Number(num)
+rev_num = reverse_number(num)
     
-print(f'The reverse of your given number is: {rev_num}')
+print(f'Reverse of the number : {rev_num}')

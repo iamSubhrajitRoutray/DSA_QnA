@@ -1,3 +1,8 @@
+'''Given an array that contains only 1 and 0 return the count of maximum consecutive ones in the array.'''
+
+
+''' OPTIMAL APPRAOCH -> '''
+
 def maximum_consecutive(arr):
     
     n = len(arr)

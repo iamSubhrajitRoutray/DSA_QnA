@@ -1,9 +1,9 @@
 '''Given an array, we have to find the largest element in the array.'''
 
-# BRUTE FORCE METHOD ->
+''' BRUTE FORCE METHOD -> '''
 
 # Function to find the largest element
-'''def largest_elemnt(arr):
+def largest_elemnt(arr):
     
     n = len(arr)
     
@@ -25,20 +25,20 @@
     print(arr)
     
 # In the above function we have used SELECTION SORT
-# It sort out the elements in the given array in ascending order and then...
+# It sort out the elements in the given array in ascending order.
     
 # Main Driver code ->
-arr = [3,6,1,8,2,7,4]
+array = [3, 6, 1, 8, 2, 7, 4]
 
-largest_elemnt(arr)
+largest_elemnt(array)
 
-# As we now our array is sorted in ascendimg form so we called the value stored in last index.
-ele = arr[len(arr) - 1]
+# As we now our array is sorted in ascending form so we called the value stored in last index.
+ele = array[len(array) - 1]
 
-print(f'The largest element in the given array is :- {ele}')'''
+print(f'The largest element in the given array is :- {ele}')
 
 
-# OPTIMAL METHOD
+''' OPTIMAL APPROACH -> '''
 
 def largest_element(arr):
     
@@ -54,10 +54,13 @@ def largest_element(arr):
     return max                   # in the end we return the max value
 
 
+
 # Main Driver code ->
+
 array = [3,6,2,5,1,8,4,9]
 
-print('The given array is :- ',array)
+print('The given array is : ',array)
+
 ele = largest_element(array)
 
-print(f'The largest element in the given array is :- {ele}')
+print(f'Largest element in  given array : {ele}')

@@ -1,4 +1,5 @@
-'''Find the highest/lowest frequency element'''
+'''Find the Majority Element that occurs more than N/2 times'''
+
 
 def majority(arr):
     

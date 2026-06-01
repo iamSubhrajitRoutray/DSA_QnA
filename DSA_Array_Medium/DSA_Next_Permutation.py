@@ -1,3 +1,8 @@
+'''next_permutation : find next lexicographically greater permutation'''
+
+
+''' OPTIMAL APPROACH '''
+
 def next_permutation(arr):
     
     n = len(arr)

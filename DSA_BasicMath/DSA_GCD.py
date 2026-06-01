@@ -1,7 +1,11 @@
 '''Find GCD of two numbers'''
 
-# METHOD 01 -> Brute Force Approach
-'''def find_GCD(a, b):
+
+
+
+'''BRUTE FORCE METHOD ->'''
+
+def find_GCD(a, b):
 
     # Initialize gcd to 1
     gcd = 1
@@ -19,7 +23,7 @@
     return gcd
 
 
-# Main function
+# Main function :
 
 num1 = int(input('Enter your first number: '))
 
@@ -27,11 +31,15 @@ num2 = int(input('Enter your second number: '))
 
 result = find_GCD(num1, num2)
 
-print(f'The GCD of {num1} and {num2} numbers is: {result}')'''
+print(f'The GCD of {num1} and {num2} numbers is: {result}')
     
     
-# METHOD 02 -> Built-In 
-'''import math
+    
+    
+    
+'''USING BUILT-IN LIBRARY ->''' 
+
+import math
 
 a = int(input('enter the first number: '))
 
@@ -39,13 +47,22 @@ b = int(input('enter the second number: '))
 
 result = math.gcd(a, b)
 
-print(f'The GCD of {a} and {b} numbers is: {result}')'''
+print(f'The GCD of {a} and {b} numbers is: {result}')
 
-# METHOD 03 -> Euclidean Method
+
+
+
+
+'''EUCLIDEAN APPROACH ->'''
+
 def GCD(a, b):
+
     while b != 0:
+
         a, b = b, a % b
+
     return a
+
 
 num1 = int(input('enter the first number: '))
 

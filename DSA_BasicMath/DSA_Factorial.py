@@ -1,6 +1,15 @@
-n = 5
-factorial = 1
-while (n > 0):
-    factorial *= n
-    n -= 1
-print(f'the factorial is {factorial}')
+'''Factorial of a given number.'''
+
+num = int(input(''))
+    
+fact = 1
+
+while (num > 0):
+
+    fact *= num
+
+    num -= 1
+
+print(f'Factorial : {fact}')
+
+

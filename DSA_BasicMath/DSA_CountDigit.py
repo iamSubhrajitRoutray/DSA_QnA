@@ -1,6 +1,7 @@
 '''Count digits in a number'''
 
-#METHOD 01-->
+''' BRUTE FORCE --> '''
+
 # Function to count the number
 # of digits in an integer 'n'.
 def count_digit(num):
@@ -35,26 +36,37 @@ def count_digit(num):
     return count
         
 # Main function
-if __name__ == "__main__":        
+if __name__ == "__main__": 
+           
     n = int(input('Enter the number: '))
+    
     print(f'Your given number is: {n}')
+    
     digit = count_digit(n)
-    print(f'The digit count of your number is: {digit}')
+    
+    print(f'Count of your number : {digit}')
     
 
-#METHOD 02-->
 
-'''num = int(input('enter the number: '))
+
+''' METHOD 02--> '''
+
+num = int(input('Enter the number: '))
+
 count= 0
-while num>0:
-    num = num//10
-    count=count+1
 
-print(f'the digit count of your number is {count}')'''
+while num > 0:
+    
+    num = num // 10
+    
+    count = count + 1
 
-#METHOD 03-->
+print(f'count of your number : {count}')
 
-'''import math
+
+''' OPTIMAL METHOD --> '''
+
+import math
 
 # Calculate the count of digits in 'n'
 # using logarithmic operation log10(n) + 1.
@@ -90,7 +102,7 @@ if __name__ == '__main__':
     
     digit = count_digit(num)
     
-    print(f'The count of the digit of given number is: {digit}')'''
+    print(f'The count of the digit of given number is: {digit}')
 
 
 

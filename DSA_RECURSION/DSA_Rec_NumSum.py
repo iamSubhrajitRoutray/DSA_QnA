@@ -1,7 +1,7 @@
 '''Sum of first N Natural Numbers'''
 
 
-'''# Normal METHOD ->
+''' BRUTE FORCE APPROACH -> '''
 
 # Function to find sum of first N natural numbers using loop
 def num_sum(n):
@@ -24,10 +24,14 @@ num = int(input('enter the number: '))
 sum = num_sum(num)
 
 # Print the result i.e the (sum)
-print(f'The sum total of all natural numbers from 1 to {num} is {sum}')'''
+print(f'The sum total of all natural numbers from 1 to {num} is {sum}')
 
 
-# Recursive METHOD ->
+
+
+
+
+'''RECURSIVE METHOD''' 
 
 # Recursive function to find sum of first N natural numbers
 def num_sum(n):
@@ -45,10 +49,14 @@ num = int(input('Enter the number: '))
 
 sum = num_sum(num)
 
-print(f'The sum total of all natural numbers from 1 to {num} is {sum}')
+print(f'Sum of natural numbers {num} : {sum}')
+    
+    
+    
     
 
-'''# Formula METHOD ->  
+'''USING FORMULA ->''' 
+
 # Function to find sum of first N natural numbers using formula  
 def num_sum(n):
     if n == 1:
@@ -58,7 +66,9 @@ def num_sum(n):
     return (n * (n + 1)) // 2
     
 # Driver/Main code ->
-num = int(input('enter the number: '))
+num = int(input('Ennter Number: '))
+
 sum = num_sum(num)
-print(f'The sum of natural numbers from 1 to {num} is {sum}')'''
+
+print(f'Sum of natural numbers {num} : {sum}')
     

@@ -1,29 +1,31 @@
 '''Lenght of Longest SubArray with given Zero Sum'''
 
-'''BRUTE FORCE APPROACH ->'''
-# def sub_array(arr):
+
+''' BRUTE FORCE APPROACH -> '''
+
+def sub_array(arr):
     
-#     n = len(arr)
+    n = len(arr)
     
-#     max_len = 0
+    max_len = 0
     
-#     for i in range(0, n):
+    for i in range(0, n):
         
-#         total = 0
+        total = 0
         
-#         for j in range(i, n):
+        for j in range(i, n):
             
-#             total = total + arr[j]
+            total = total + arr[j]
             
-#             if total == 0:
-#                 max_len = max(max_len, j - i + 1)
+            if total == 0:
+                max_len = max(max_len, j - i + 1)
                 
-#     print(max_len)
+    print(max_len)
     
 
-# array = [6, -2, 2, -8, 1, 7, 4, -10]
+array = [6, -2, 2, -8, 1, 7, 4, -10]
 
-# sub_array(array)
+sub_array(array)
 
 
 

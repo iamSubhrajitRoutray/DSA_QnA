@@ -8,14 +8,14 @@ def factorial(n):
         return 1
     
     # Recursive case: n * factorial of (n-1)
-    return n * factorial(n-1)
+    return n * factorial(n - 1)
 
 
 # Driver code/ Main code - >
-num = int(input('enter the number: '))
+num = int(input('Enter the number: '))
 
 # Assigning the factorial function to a variable
 result = factorial(num)
 
 # Call the factorial function and print the result
-print(f'The factorial of {num} is {result}')
+print(f'Factorial of {num} : {result}')

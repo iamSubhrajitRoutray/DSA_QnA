@@ -1,4 +1,6 @@
-'''Longest Consecutive Sequence in an Array'''
+'''Longest Consecutive Sequence in an Array
+Return the length of the longest sequence of consecutive integers.
+The integers in this sequence can appear in any order.'''
 
 
 ''' BRUTE FORCE -> '''
@@ -30,6 +32,7 @@ def longest_sequence(arr):
 array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
 
 longest_sequence(array)
+
 
 
 
@@ -72,6 +75,7 @@ def longest_sequence(arr):
 # Main Driver Code...
 array = [1, 99, 101, 98, 2, 5, 3, 100, 1, 1]
 longest_sequence(array)
+
 
 
 
