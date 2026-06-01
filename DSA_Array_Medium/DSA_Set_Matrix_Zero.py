@@ -1,4 +1,7 @@
-''''''
+'''Given a matrix if an element in the matrix is 0;
+then you will have to set its entire column and row to 0 and then return the matrix..'''
+
+
 
 ''' BRUTE FORCE APPRAOCH -> '''
 
@@ -49,6 +52,9 @@ matrix=[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
 set_zero(matrix)
 
 
+
+
+''' OPTOMAL APPROACH -> '''
 
 def set_zero(matrix):
     
