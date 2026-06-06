@@ -1,9 +1,7 @@
-'''Find GCD of two numbers'''
+'''Q) Find GCD of two numbers'''
 
 
-
-
-'''BRUTE FORCE METHOD ->'''
+'''BRUTE FORCE APPROACH ->'''
 
 def find_GCD(a, b):
 
@@ -23,7 +21,7 @@ def find_GCD(a, b):
     return gcd
 
 
-# Main function :
+# Main/Driver code : 
 
 num1 = int(input('Enter your first number: '))
 
@@ -31,19 +29,18 @@ num2 = int(input('Enter your second number: '))
 
 result = find_GCD(num1, num2)
 
-print(f'The GCD of {num1} and {num2} numbers is: {result}')
+print(f'The GCD of {num1} and {num2} is: {result}')
     
     
-    
-    
+      
     
 '''USING BUILT-IN LIBRARY ->''' 
 
 import math
 
-a = int(input('enter the first number: '))
+a = int(input('Enter the first number: '))
 
-b = int(input('enter the second number: '))
+b = int(input('Enter the second number: '))
 
 result = math.gcd(a, b)
 
@@ -52,8 +49,7 @@ print(f'The GCD of {a} and {b} numbers is: {result}')
 
 
 
-
-'''EUCLIDEAN APPROACH ->'''
+'''EUCLIDEAN METHOD ->'''
 
 def GCD(a, b):
 
@@ -64,9 +60,9 @@ def GCD(a, b):
     return a
 
 
-num1 = int(input('enter the first number: '))
+num1 = int(input('Enter the first number: '))
 
-num2 = int(input('enter the second number: '))
+num2 = int(input('Enter the second number: '))
 
 result = GCD(num1, num2)
 

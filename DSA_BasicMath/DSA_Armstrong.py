@@ -1,4 +1,4 @@
-'''Check if a number is Armstrong Number or not'''
+'''Q) Check if a number is Armstrong Number or not'''
 
 def check_armstrong(num):
     
@@ -7,6 +7,7 @@ def check_armstrong(num):
     p = len(str(num))
     
     while num > 0:
+        
         last_digit = num % 10
         
         sum += last_digit ** p
@@ -16,7 +17,7 @@ def check_armstrong(num):
     return sum
 
 
-num = int(input('Enter your number: '))
+num = int(input('Enter the number: '))
 
 result = check_armstrong(num)
 

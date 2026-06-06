@@ -14,13 +14,16 @@ class Solution:
             print()
             
             
-'''class Solution:
+class Solution:
+    
     def pattern1(self, n):
+    
         for i in range(n):
-            print('*'* n)'''
+            
+            print('*' * n)
 
 
-#line of codes to run the above pseudo...             
+# Main/Driver code :          
 obj = Solution()
-n=5
+n = 5
 obj.pattern1(n)

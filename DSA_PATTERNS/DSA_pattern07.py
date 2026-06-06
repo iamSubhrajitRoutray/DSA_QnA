@@ -1,28 +1,34 @@
 '''Star Pyramid'''
 
 class Solution:
+    
     def pattern7(self, n):
         
-        # Outer loop is for the rows->
+        # Outer loop is for the rows.
         for i in range(n):
             
-            # Print leading spaces->
+            # Print leading spaces.
             for j in range(n - i - 1):
+                
                 print(' ', end=' ')
                 
-            # Print stars->  
+            # Print stars.
             for j in range(2 * i + 1):
+                
                 print('*', end=' ')
                 
-            # Print trailing spaces-> 
+            # Print trailing spaces.
             for j in range(n - i - 1):
+                
                 print(' ', end=' ')
                 
             # Move to the next line after printing the current row
             print()
 
 
-#line of codes to run the above pseudo...               
+# Main/Driver code :             
 obj = Solution()
+
 n = 3
+
 obj.pattern7(n)

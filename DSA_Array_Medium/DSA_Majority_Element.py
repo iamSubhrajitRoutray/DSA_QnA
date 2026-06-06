@@ -1,4 +1,4 @@
-'''Find the Majority Element that occurs more than N/2 times'''
+'''Q) Find the Majority Element that occurs more than N/2 times'''
 
 
 def majority(arr):
@@ -45,15 +45,15 @@ def majority(arr):
             max_freq = count
         
     # print the max and min element
-    print(f'The element "{max_ele}" having maximum no. of occurence.')
-    print(f'It occurs {max_freq} times in the given array.')
+    print(f'Element with maximum no. of occurence : {max_ele}')
+    
+    print(f'Frequency of element : {max_freq}')
     
     
 
-# Main/Driver code
-arr = [1,3,1,15,3,1,5,1]
+# Main/Driver code :  
+arr = [1, 3, 1, 15, 3, 1, 5, 1]
 
-# Function call
 majority(arr)
 
 

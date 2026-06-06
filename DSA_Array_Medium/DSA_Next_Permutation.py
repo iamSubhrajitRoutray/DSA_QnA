@@ -1,4 +1,4 @@
-'''next_permutation : find next lexicographically greater permutation'''
+'''Q) Next Permutation : find next lexicographically greater permutation'''
 
 
 ''' OPTIMAL APPROACH '''
@@ -34,6 +34,7 @@ def next_permutation(arr):
     arr[index + 1: ] = reversed(arr[index + 1: ])
     
 
+# Main/Driver code : 
 def run_code():
     
     array = [1,2,3]
@@ -41,7 +42,7 @@ def run_code():
     next_permutation(array)
     
     print(''.join(map(str,array)))
-    
+
 run_code()
 
 

@@ -1,7 +1,6 @@
 '''Kadane's Algorithm : Maximum Subarray Sum in an Array'''
 
 
-
 ''' BRUTE FORCE APPROACH '''
 
 def max_sum(arr):
@@ -21,7 +20,9 @@ def max_sum(arr):
             max_sum = max(total, max_sum)
             
     print(max_sum)
-    
+
+
+# Main/Driver code :  
 array = [2, 3, 5, -2, 7, -4]
 
 max_sum(array)
@@ -50,7 +51,8 @@ def max_sum(arr):
     
     print(max_sum)
     
-
+    
+# Main/Driver code :  
 array = [2, 3, 5, -2, 7, -4]
 
 max_sum(array)

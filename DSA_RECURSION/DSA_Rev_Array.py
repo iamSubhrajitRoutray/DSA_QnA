@@ -6,35 +6,39 @@ def reverse_array(arr):
     l = len(arr)
     
     # Create a new array of same size to store reversed elements
-    n_arr = [0] * l
+    new_arr = [0] * l
     
     # Start a loop to fill n_arr[] from the back of arr[]
     for i in range(l):
         
         # Place elements from the end of arr into the start of n_arr
-        n_arr[i] = arr[l - i - 1]
+        new_arr[i] = arr[l - i - 1]
         
      # Return the reversed array    
-    return n_arr
+    return new_arr
 
 
-# Main code to reverse an array/list ->
+# To reverse an array/list.
+
 num = int(input('Enter array lenght : '))
+
 new_arr = []
 
 for i in range(num):
     
     val = input(f'Enter the value {i+1}: ')
+
     new_arr.append(val)
 
-print(f'Your given list is: ',new_arr)
+
+print(f'Given list : ', new_arr)
 
 rev_arr = reverse_array(new_arr)
 
-print(f'The reverse of your given list is: ',rev_arr)
+print(f'Reverse of list : ',rev_arr)
     
 
-# Driver code for an given array ->
+# Main/Driver code :
 new = [10, 20 ,30, 40, 50, 60, 70, 80, 90, 100]
 
 rev = reverse_array(new)
@@ -42,20 +46,20 @@ rev = reverse_array(new)
 print(rev)
 
 
-'''In-Build Python Function Module'''
+'''In-Build Function Module'''
 
 # Function to reverse the array using slicing
 def reverse_array(arr):
+    
     # Reassign the array with reversed version using slicing
     arr[:] = arr[::-1]
     
-# Input array
-new_arr = [1,2,3,4,5,6]
+    
+# Main/Driver code :
+new_arr = [1, 2, 3, 4, 5, 6]
 
-#  Function call by a variable
 rev = reverse_array(new_arr)
 
-# Print the reverse array; (The function call)
 print(rev)
 
 

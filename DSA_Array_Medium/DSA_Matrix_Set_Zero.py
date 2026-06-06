@@ -1,4 +1,4 @@
-'''Given a matrix if an element in the matrix is 0;
+'''Q) Given a matrix if an element in the matrix is 0;
 then you will have to set its entire column and row to 0 and then return the matrix..'''
 
 
@@ -47,10 +47,10 @@ def set_zero(matrix):
     print(matrix)
     
     
-    
+# Main/Driver code : 
 matrix=[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
-set_zero(matrix)
 
+set_zero(matrix)
 
 
 
@@ -84,7 +84,8 @@ def set_zero(matrix):
                 
     print(matrix)
     
-
+    
+# Main/Driver code : 
 matrix=[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
 
 set_zero(matrix)

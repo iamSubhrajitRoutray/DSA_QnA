@@ -1,6 +1,8 @@
-class Solution:
+''' Q) Mapping score of the student'''
+
+class grading:
     
-    def studentGrade(self, marks):
+    def student_grade(self, marks):
     
         if marks >= 90:
 
@@ -22,7 +24,9 @@ class Solution:
 
             print('Fail')
 
-obj = Solution()
 
-obj.studentGrade(80)
+# Main/Driver code : 
+obj = grading()
+
+obj.student_grade(80)
 

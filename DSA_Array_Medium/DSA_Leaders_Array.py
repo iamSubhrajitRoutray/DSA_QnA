@@ -22,7 +22,7 @@ def leader_array(arr):
     print(ans)
 
 
-# MAIN CODE ->
+# Main/Driver code :  
 array = [1, 8, 6, 4, 5]
 leader_array(array)
             

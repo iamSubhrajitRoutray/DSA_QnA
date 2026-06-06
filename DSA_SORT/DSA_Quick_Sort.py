@@ -1,4 +1,4 @@
-'''Given an array of n integers, sort the array using the Quicksort method.'''
+'''Q) Given an array of n integers, sort the array using the Quicksort method.'''
 
 # Function for parition in the given array using pivot element
 def partition(arr, low, high):
@@ -24,7 +24,8 @@ def partition(arr, low, high):
     
     return j
 
-# Function for Quick sort algorithm 
+
+# Function for Quick Sort Algorithm 
 def quick_sort(arr, low, high):
     
     if low < high:
@@ -36,14 +37,13 @@ def quick_sort(arr, low, high):
         quick_sort(arr, pivot_index + 1, high)
         
         
-# Driver/Main code 
-
-array = [4,9,5,2,7,3,6,8,1]
+# Main/Driver code : 
+array = [4, 9, 5, 2, 7, 3, 6, 8, 1]
 
 num = len(array)
 
 quick_sort(array, 0, num-1)
 
-print(f'Sorted array :- {array}')
+print(f'Sorted array : {array}')
     
     

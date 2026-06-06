@@ -1,4 +1,4 @@
-'''Longest SubArray with given Sum K(Positives)'''
+'''Q) Longest SubArray with given Sum K(Positives)'''
 
 def sub_array(arr, k):
     
@@ -20,7 +20,7 @@ def sub_array(arr, k):
     print(max_len)
     
 
-
+# Main/Driver code : 
 array = [10, 5, 2, 7, 1, 9]
 
 k = 15

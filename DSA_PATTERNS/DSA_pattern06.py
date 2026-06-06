@@ -1,6 +1,7 @@
 '''Inverted Numbered Right Pyramid'''
 
 class Solution:
+    
     def pattern6(self, n):
         
         # The outer loop is for the rows->
@@ -14,7 +15,7 @@ class Solution:
             # Move to the next line after printing the current row
             print()
 
-# Driver code              
+# Main/Driver code :            
 obj = Solution()
 n=5
 obj.pattern6(n)

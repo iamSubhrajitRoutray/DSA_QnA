@@ -1,5 +1,7 @@
-'''Two Sum : Check if a pair with given sum exists in Array.'''
+'''Q) Two Sum : Check if a pair with given sum exists in Array.'''
 
+
+'''BRUTE APPROACH ->'''
 def array_sum(arr, target):
     
     n = len(arr)
@@ -30,8 +32,8 @@ def sum_pair(arr, target):
     return print([-1,-1])
                 
 
-
-arr = [1,2,3,4,5]
+# Main/Driver code : 
+arr = [1, 2, 3, 4, 5]
 
 target = 9
 
@@ -42,32 +44,31 @@ sum_pair(arr, target)
 
 
 
+'''OPTIMAL APPROACH ->'''
 
-'''OPTIMAL APPROACH'''
-
-# def array_sum(arr,target):
+def array_sum(arr,target):
     
-#     l = len(arr)
+    l = len(arr)
     
-#     hash_map = {}
+    hash_map = {}
     
-#     for i in range(l):
+    for i in range(l):
         
-#         remaining = target-arr[i]
+        remaining = target-arr[i]
         
-#         if remaining in hash_map:
+        if remaining in hash_map:
         
-#             print([hash_map[remaining],i])
+            print([hash_map[remaining],i])
 
-#         hash_map[arr[i]] = i
+        hash_map[arr[i]] = i
 
 
+# Main/Driver code : 
+arr = [2, 6, 5, 8, 11]
 
-# arr = [1,2,3,4,5]
+target = 14
 
-# target = 9
-
-# array_sum(arr, target)
+array_sum(arr, target)
         
     
     

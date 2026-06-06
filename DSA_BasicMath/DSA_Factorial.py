@@ -1,6 +1,6 @@
-'''Factorial of a given number.'''
+'''Q) Factorial of a given number.'''
 
-num = int(input(''))
+num = int(input('Enter the number : '))
     
 fact = 1
 

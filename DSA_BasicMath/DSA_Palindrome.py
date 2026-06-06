@@ -1,12 +1,11 @@
-'''Check if a number is Palindrome or not'''
+'''Q) Check if a number is Palindrome or not'''
 
 def palindrome(n):
     
-    # Initialize a variable to store the reverse of the number
+    # Initialize a variable to store the reverse of the number.
     p_num = 0
     
-    # Iterate through each digit of the number until it becomes 0
-    
+    # Iterate through each digit of the number until it becomes 0.
     while n > 0:
         
         # Extract the last digit of the number
@@ -22,9 +21,9 @@ def palindrome(n):
 
 
 
-# Main function
+# Main/Driver code : 
 
-num = int(input('enter the number: '))
+num = int(input('Enter the number : '))
 
 check_num = palindrome(num)
 

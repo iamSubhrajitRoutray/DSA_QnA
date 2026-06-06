@@ -1,4 +1,4 @@
-'''Count frequency of each element in the array'''
+'''Q) Count frequency of each element in the array'''
 
 # defining the function
 
@@ -22,8 +22,9 @@ def frequency(arr, num):
                 
         print(f'{arr[i]} : {count}')
         
-
-arr = [5,10,100,15,10,50,5,15]
+        
+# Main/Driver code : 
+arr = [5, 10, 100, 15, 10, 50, 5, 15]
 
 num = len(arr)
 

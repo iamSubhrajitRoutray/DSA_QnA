@@ -3,10 +3,10 @@
 class Solution:
     def pattern2(self, n):
         
-        #the outer loop is for the rows->
+        # The outer loop is for the rows->
         for i in range(n):
             
-            #the inner loop for the columns->
+            # The inner loop for the columns->
             for j in range(i + 1):
                 print('*', end=' ')
                 
@@ -14,12 +14,16 @@ class Solution:
             print()
             
             
-'''class Solution:
+class Solution:
+    
     def pattern2(self, n):
+    
         for i in range(n):
-            print('*'*(i+1))'''
+    
+            print('*' * (i + 1))
 
-# Driver code
+
+# Main/Driver code : 
 obj = Solution()
 n = 4
 obj.pattern2(n)

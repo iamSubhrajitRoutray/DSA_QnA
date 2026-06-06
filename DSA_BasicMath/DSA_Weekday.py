@@ -1,6 +1,8 @@
-class Solution:
+'''Q) To find the day of the week.'''
+
+class week_day:
     
-    def whichWeekDay(self, day):
+    def which_week_day(self, day):
 
             if day == 1:
                 print('Monday')
@@ -35,10 +37,11 @@ class Solution:
         days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
         
         if 1<= day <= 7:
-            print(days[day-1])
+            print(days[day - 1])
         
         else:
             print('Invalid')
+    
     
 # METHOD 03 
 
@@ -56,5 +59,5 @@ class Solution:
         
         print(days.get(day, 'Invalid'))
         
-obj = Solution()
-obj.whichWeekDay(2)
+obj = week_day()
+obj.which_week_day(2)

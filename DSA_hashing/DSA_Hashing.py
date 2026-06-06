@@ -1,4 +1,7 @@
-'''HASHING Brute Force Method'''
+''' HASHING'''
+
+
+'''BRUTE FORCE APPROACH ->'''
 
 # Given array
 arr = [1, 3, 1, 3, 1, 2, 3]
@@ -26,7 +29,7 @@ for num in hash_arr:
     
 arr =[]
 
-num = int(input('enter the lenght of your array: '))
+num = int(input('Enter the lenght of your array: '))
 
 print(num)
 

@@ -8,17 +8,19 @@ def fibonacci(n):
         return n
     
     # Recursive calls: calculate previous two terms
-    last = fibonacci(n - 1) # (n-1)th term which means the previous term of the current term
-    s_last = fibonacci(n - 2) # (n-2)th term which means the term previous than the previous term of the current term
+    last = fibonacci(n - 1)      # (n-1)th term; the previous term of the current term
+    s_last = fibonacci(n - 2)    # (n-2)th term; the previous than the previous term of the current term
     
     return last + s_last
 
-# Driver code ->
+# # Main/Driver code :
 num = int(input('Enter the number: '))
 
 print(f'Fibonacci series till {num} is: ')
 
-# Since this function will only print the last term of the series if being called direcly; so for that:
+
+# Since this function will only print the last term of the series if being called direcly;
+
 # To show all the numbers to the nth term, we have to loop it to the (n+1)th term (as index starts from 0)
 for i in range(num + 1):
     
@@ -35,12 +37,15 @@ print()
 def fibonacci(n):
     
     if n == 0:
+        
         print(0)
    
     elif n == 1:
+        
         print('0 1')
    
     else:
+        
         fib = [0] * (n + 1)
       
         fib[0] = 0
@@ -57,4 +62,4 @@ def fibonacci(n):
 
 num = int(input('Enter the number: '))
 
-print(f'Fibonacci series till {num}th term is: ', fibonacci(num))
+print(f'Fibonacci series till {num}th term : ', fibonacci(num))

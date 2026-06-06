@@ -1,11 +1,11 @@
-'''Rotate Image by 90 degree
-Q)
-Given an N * N 2D integer matrix, rotate the matrix by 90 degrees clockwise.
-The rotation must be done in place, meaning the input 2D matrix must be modified directly..'''
+'''Rotate Matrix by 90 degree
+Q) Given an N x N 2D integer matrix, rotate the matrix by 90 degrees clockwise.'''
+
+# The rotation must be done in place, meaning the input 2D matrix must be modified directly.
 
 
 
-''' OPTIMAL APPROACH -> '''
+''' BRUTE FORCE APPORACH -> '''
 
 def rotate_90(matrix):
     
@@ -25,12 +25,13 @@ def rotate_90(matrix):
     print(result)
 
 
-# Driver/Main code -> 
+# Main/Driver code : 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
 rotate_90(matrix)
 
 
-''' OPTIMAL APPORACH -> '''
+'''OPTIMAL APPROACH : '''
 
 def rotate(matrix):
     
@@ -39,7 +40,7 @@ def rotate(matrix):
     # Loop for transpose of the matrix
     for i in range(0, n):
     
-        for j in range(i+1, n):
+        for j in range(i + 1, n):
             
             # Swap the element of (i,j) with (j,i)
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
@@ -52,7 +53,8 @@ def rotate(matrix):
     print(matrix)
 
 
-# Driver/Main code -> 
+# Main/Driver code : 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
 rotate_90(matrix)
 

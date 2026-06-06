@@ -1,4 +1,4 @@
-'''Given an integer array sorted in non-decreasing order,
+'''Q) Given an integer array sorted in non-decreasing order,
 remove the duplicates in place such that each unique element appears only once.
 If there are k elements after removing the duplicates,
 then the first k elements of the array should hold the final result.
@@ -26,8 +26,9 @@ def remove_duplicate(arr):
         
         j += 1
     
-    return print(f'The final number of elements in the array is : {j}.')
+    return print(f'Resultant array : {j}.')
 
+# Main/Driver code :
 array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
 
 remove_duplicate(array)
@@ -58,10 +59,10 @@ def duplicate(arr):
         
         j += 1
     
-    return print(f'The final no. of elements in the array is : {i + 1}')
+    return print(f'Resultant array : {i + 1}')
     
     
-
+# Main/Driver code :
 array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
 
 duplicate(array)

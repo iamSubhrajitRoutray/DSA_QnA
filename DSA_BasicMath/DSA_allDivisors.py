@@ -1,4 +1,4 @@
-'''Print all Divisors of a given Number'''
+'''Q) Print all divisors of a given number'''
 
 def divisors(n):
     
@@ -17,12 +17,12 @@ def divisors(n):
     # Return the list of divisors
     return div
 
-# Driver code ->
 
+# Main/Driver code : 
 num = int(input('enter the number: '))
 
 result = divisors(num)
 
-print(f'The divisors of {num} are {result}.')
+print(f'Divisors are : {result}.')
 
     

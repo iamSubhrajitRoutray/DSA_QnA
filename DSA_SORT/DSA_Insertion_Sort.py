@@ -1,3 +1,6 @@
+'''INSERTION SORT'''
+
+
 def insertion_sort(arr):
     
     n = len(arr)
@@ -17,6 +20,7 @@ def insertion_sort(arr):
         
     print(arr)
     
-arr = [2,5,9,1,4,8]
+# Main/Driver code : 
+arr = [2, 5, 9, 1, 4, 8]
 
 insertion_sort(arr)

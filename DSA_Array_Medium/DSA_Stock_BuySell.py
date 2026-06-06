@@ -1,6 +1,5 @@
 '''STOCK BUY SELL
-Q)
-You are given an array of prices where prices[i] is the price of a given stock on an ith day.
+Q) You are given an array of prices where prices[i] is the price of a given stock on an ith day.
 You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
 Return the maximum profit you can achieve from this transaction.
 If you cannot achieve any profit, return 0.'''
@@ -60,10 +59,10 @@ def profit(arr):
   
     profit = sell(arr) - buy(arr)
   
-    print(f'The profit for today is {profit}.')
+    print(f'Profit : {profit}.')
 
 
-
+# Main/Driver code : 
 prices = [2, 4, 6, 3, 8, 1, 10, 5, 7, 9]
 
 profit(prices)
@@ -90,10 +89,12 @@ def stock(prices):
     
     print(sell)
     
-
+    
+# Main/Driver code : 
 prices = [2, 4, 6, 3, 8, 1, 10, 5, 7, 9]
 
 stock(prices)
+
 
 
 ''' BRUTE FORCE - 2 '''
@@ -117,10 +118,11 @@ def stock(price):
     print(f'Profit : {max_profit}')
 
 
-
+# Main/Driver code : 
 prices = [1,2,3,4,5]
 
 stock(prices)
+
 
 
 
@@ -142,7 +144,8 @@ def stock(price):
     
     print(f'Profit : {sell}')
     
-
+    
+# Main/Driver code : 
 prices = [1,2,3,4,5]
 
 stock(prices)

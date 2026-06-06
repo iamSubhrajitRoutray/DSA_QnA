@@ -1,4 +1,5 @@
-'''Reverse a given array in the without changing the serial of the elements.'''
+'''Q) Reverse a given array in the without changing the serial of the elements.'''
+
 
 def reverse(arr, n):
     
@@ -18,8 +19,9 @@ def reverse(arr, n):
     
     print(arr)
     
-
-array = [1,2,3,4,5,6,7]
+    
+# Main/Driver code : 
+array = [1, 2, 3, 4, 5, 6, 7]
 
 l = len(array)
 

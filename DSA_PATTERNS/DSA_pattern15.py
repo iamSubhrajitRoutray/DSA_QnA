@@ -19,7 +19,9 @@ class Solution:
             print()
             
 
-#code for running the above pseudo...
+# Main/Driver code :
 obj = Solution()
+
 n = 4
+
 obj.pattern15(n)

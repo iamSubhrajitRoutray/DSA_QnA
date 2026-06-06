@@ -1,4 +1,5 @@
-'''Reverse Digits of A Number'''
+'''Q) Reverse Digits of A Number'''
+
 
 # Function to reverse digits of a number
 def reverse_number(n):
@@ -20,8 +21,7 @@ def reverse_number(n):
     return rev
 
 
-# Main function; driver code
-
+# Main/Driver code : 
 num = int(input('Enter the number: '))
 
 print(f'Your number : {num}')

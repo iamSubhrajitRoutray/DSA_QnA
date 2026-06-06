@@ -12,19 +12,22 @@ class Selection:
             for j in range(i+1):
                 
                 # Print the alphabet character followed by a space
+                
                 # chr(number) converts a number → corresponding ASCII character
-                print(chr(65+j), end=' ')
+                print(chr(65 + j), end=' ')
                 
                 # ord('A') → returns ASCII value of 'A' (65)
-                '''print(chr(ord('A'+j), end=' '))''' 
+                print(chr(ord('A'+ j), end=' '))
                    
             # Move to the next line after printing the current row
             print()
         
         
-#code for running the above pseudo...
+# Main/Driver code :
 obj = Selection()
+
 n = 4
+
 obj.pattern14(n)
 
         

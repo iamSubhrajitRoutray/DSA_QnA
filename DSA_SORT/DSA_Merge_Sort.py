@@ -23,13 +23,17 @@ def merge_array(left,right):
     result = []
     
     i = 0
+    
     j = 0
     
     n = len(left)
+    
     m = len(right)
     
     while i < n and j < m:
+        
         if left[i] <= right[j]:
+        
             result.append(left[i])
             i += 1
             
@@ -38,12 +42,16 @@ def merge_array(left,right):
             j += 1
             
     if i < n:
+        
         while i < n:
+        
             result.append(left[i])
             i += 1
             
     if j < m:
+        
         while j < m:
+        
             result.append(right[j])
             j += 1
     
@@ -51,10 +59,9 @@ def merge_array(left,right):
 
 
 
-# DRIVER CODE ->
-
-array = [4,6,2,9,7,1,5,8]
+# Main/Driver code : 
+array = [4, 6, 2, 9, 7, 1, 5, 8]
 
 merge_sort(array)
 
-print(f'Sorted array :- {array}')
+print(f'Sorted array : {array}')

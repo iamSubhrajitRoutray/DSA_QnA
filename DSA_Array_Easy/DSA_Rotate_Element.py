@@ -1,4 +1,4 @@
-'''Given an integer array nums, rotate the array to the left by one.'''
+'''Q) Given an integer array nums, rotate the array to the left by one.'''
 
 def rotate_element(arr):
     
@@ -12,9 +12,10 @@ def rotate_element(arr):
     
     arr[-1] = temp              # Place the first element at the end
             
-    print(f'The updated array is : {arr}')
+    print(f'Updated array : {arr}')
 
 
+# Main/Driver code : 
 array = [1, 2, 3, 4, 5, 6]
 
 rotate_element(array)

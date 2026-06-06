@@ -1,7 +1,9 @@
 '''Diamond Star Pattern'''
 
 class Solution:
+    
     def pattern9(self, n):
+        
         for i in range(n):
             
             # Print spaces before stars
@@ -15,6 +17,7 @@ class Solution:
             
     # Function to print the inverted pyramid            
     def inverted_pattern9(self, n):
+        
         for i in range(n):
             
             # Print spaces before stars
@@ -27,8 +30,11 @@ class Solution:
             print(' ' * i)
             
 
-#line of codes to run the above pseudo...        
+# Main/Driver code :     
 obj = Solution()
+
 n = 5
+
 obj.pattern9(n)
+
 obj.inverted_pattern9(n)

@@ -1,6 +1,7 @@
 '''Number Crown Pattern'''
 
 class Solution:
+    
     def pattern12(self, n):
         
         # Initial number of spaces in the first row
@@ -27,7 +28,9 @@ class Solution:
             space -= 2
                      
             
-#line of codes to run the above pseudo...            
+# Main/Driver code :           
 obj = Solution()
+
 n = 4
+
 obj.pattern12(n)

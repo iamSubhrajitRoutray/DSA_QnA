@@ -1,6 +1,7 @@
 '''Right-Angled Number Pyramid'''
 
 class Solution:
+    
     def pattern3(self, n):
         
         # The outer loop is for the rows->
@@ -14,7 +15,9 @@ class Solution:
             print()
             
             
-# Driver code...           
+# Main/Driver code :           
 obj = Solution()
+
 n = 3
+
 obj.pattern3(n)

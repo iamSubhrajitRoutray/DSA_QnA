@@ -1,6 +1,6 @@
 '''Alpha-Ramp Pattern'''
 
-'''class Solution:
+class Solution:
     
     # Function to print the pattern where each letter is repeated in the row
     def pattern16(self, n):
@@ -15,7 +15,7 @@
                 print(chr(65+i), end=' ')
                 
             # Move to the next line after printing the current row
-            print()'''
+            print()
             
             
 class Solution:
@@ -39,7 +39,9 @@ class Solution:
             print()
             
 
-# Driver code   
+# Main/Driver code : 
 obj = Solution()
+
 n = 5
+
 obj.pattern16(n)

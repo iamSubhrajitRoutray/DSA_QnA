@@ -1,8 +1,9 @@
-'''Find the Missing Number in the given Array.'''
+'''Q) Find the Missing Number in the given Array.'''
 
 
 
 ''' BRUTE FORCE APPROACH -> '''
+
 def missing_number(arr):
     
     n = len(arr)
@@ -13,14 +14,14 @@ def missing_number(arr):
             return i
 
 
-
+# Main/Driver code : 
 array = [4, 6, 1, 8, 2, 3, 7]
 
 print(array)
 
 num = missing_number(array)
 
-print(f' missing number : {num}.')
+print(f' Missing number : {num}.')
 
 
 
@@ -37,10 +38,11 @@ def missing_number(arr):
     return num
 
 
+# Main/Driver code : 
 array = [1, 2, 3, 6, 5, 7]
 
 print(array)
 
 result = missing_number(array)
 
-print(f'missing number : {result}.')
+print(f'Missing number : {result}.')

@@ -1,4 +1,4 @@
-'''Lenght of Longest SubArray with given Zero Sum'''
+'''Q) Lenght of Longest SubArray with given Zero Sum'''
 
 
 ''' BRUTE FORCE APPROACH -> '''
@@ -22,11 +22,11 @@ def sub_array(arr):
                 
     print(max_len)
     
-
+    
+# Main/Driver code :  
 array = [6, -2, 2, -8, 1, 7, 4, -10]
 
 sub_array(array)
-
 
 
 
@@ -60,7 +60,7 @@ def sub_array(arr):
     print(max_len)
     
 
-# Driver code ->
+# Main/Driver code :  
 array = [9, -3, 3, -1, 6, -5]
 
 sub_array(array)

@@ -1,41 +1,32 @@
-'''Count digits in a number'''
+'''Q) Count digits in a number'''
 
-''' BRUTE FORCE --> '''
 
-# Function to count the number
-# of digits in an integer 'n'.
+''' BRUTE FORCE APPRAOCH -> '''
+
+# Function to count the number of digits in an integer.
 def count_digit(num):
+    
     # Initialize a counter variable
     # 'count' to store the count of digits.
-    
     count = 0
 
-    #if num equals to 0 then return 1; (False)
-    
+    # If num equals to 0 then return 1; (False)
     if num == 0:
         return 1
         
-    # While loop iterates until 'n'
-    # becomes 0 (no more digits left).  
-    
+    # Loop iterates until becomes 0 (no more digits left).  
     while num > 0:
     
-        # Increment the counter
-        # for each digit encountered.
-        
+        # Increment the counter.
         count += 1
         
-        # Divide 'n' by 10 to
-        # remove the last digit.
-        
+        # Divide num by 10 to remove the last digit.
         num = num // 10
-        
-    # Return the
-    # count of digits.
     
     return count
         
-# Main function
+        
+# Main/Driver code : 
 if __name__ == "__main__": 
            
     n = int(input('Enter the number: '))
@@ -49,7 +40,7 @@ if __name__ == "__main__":
 
 
 
-''' METHOD 02--> '''
+''' BETTER APPROACH -> '''
 
 num = int(input('Enter the number: '))
 
@@ -64,7 +55,8 @@ while num > 0:
 print(f'count of your number : {count}')
 
 
-''' OPTIMAL METHOD --> '''
+
+''' OPTIMAL METHOD -> '''
 
 import math
 
@@ -93,16 +85,16 @@ def count_digit(n):
     
     return count
 
-# Main function
+# Main/Driver code : 
 if __name__ == '__main__':
     
     num = 12345
     
-    print(f'Your given number is: {num}')
+    print(f' Your number is: {num}')
     
     digit = count_digit(num)
     
-    print(f'The count of the digit of given number is: {digit}')
+    print(f'Count of the digits of given number : {digit}')
 
 
 

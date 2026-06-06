@@ -1,12 +1,11 @@
 '''Rearrange Array Elements by Sign
-Q)
-There is an array "arr" of size "n/l" with an equal number of positive and negative elements.
+Q) There is an array "arr" of size "n/l" with an equal number of positive and negative elements.
 Without altering the relative order of positive and negative elements,
 you must return an array of alternately positive and negative values.'''
 
 
 
-'''BRUTE FORCE'''
+'''BRUTE FORCE APPROACH ->'''
 
 def re_arrange(arr):
     
@@ -19,12 +18,11 @@ def re_arrange(arr):
     for i in range(n):
         
         if arr[i] > 0:
-        
             pos.append(arr[i])
         
         else:
-        
             neg.append(arr[i])
+        
         
     for i in range(n // 2):
         
@@ -32,8 +30,10 @@ def re_arrange(arr):
         
         arr[2 * i + 1] = neg[i]
     
-    return print(arr)
+    print(arr)
 
+
+# Main/Driver code :  
 array = [1, 2, -3, -1, 4]
 
 re_arrange(array)
@@ -67,6 +67,7 @@ def re_arrange(arr):
     print(ans)
     
 
-array = [1,2,1,-3,-2,-1]
+# Main/Driver code :  
+array = [1, 2, -3, -1, 4]
 
 re_arrange(array)

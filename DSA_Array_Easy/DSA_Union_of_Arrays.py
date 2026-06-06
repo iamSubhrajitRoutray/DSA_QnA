@@ -1,12 +1,12 @@
 '''Union of Two Sorted Arrays
-Q)
-Given two sorted arrays, arr1, and arr2 of size n and m. Find the union of two sorted arrays.
-The union of two arrays can be defined as the common and distinct elements in the two arrays.
-'''
+Q) Given two sorted arrays, arr1, and arr2 of size n and m.
+Find the union of two sorted arrays.'''
+
+# The union of two arrays can be defined as the common and distinct elements in the two arrays.
 
 
-''' Using SET -> '''
 
+'''OPTIMAL APPRAOCH->'''
 
 def union(arr1, arr2):
     
@@ -15,18 +15,24 @@ def union(arr1, arr2):
     return sorted(arr_set)
 
 
+# Main/Driver code :  
 array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(array1)
+
 array2 = [2, 3, 4, 4, 5, 11, 12]
+print(array2)
 
-sorted_array = union(array1, array2)
+array_union = union(array1,array2)
 
-print(sorted_array)
+print(f'Union of arrays : {array_union}')  
+
 
 
 
 
 
 ''' BRUTE FORCE APPROACH -> '''
+
 def union(arr1, arr2):
     
     n = len(arr1)
@@ -76,7 +82,7 @@ def union(arr1, arr2):
     return result
 
 
-
+# Main/Driver code :  
 array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(array1)
 
@@ -85,4 +91,4 @@ print(array2)
 
 array_union = union(array1,array2)
 
-print(f'The union of given arrays is : {array_union}')  
+print(f'Union of arrays : {array_union}') 

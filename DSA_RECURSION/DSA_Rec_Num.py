@@ -14,7 +14,7 @@ def rec_num(i, n):
     rec_num(i + 1, n)
  
 
-# Driver Code ->   
+# Main/Driver code :  
 num = int(input('Enter the number: '))
 
 print('The numbers are: ')

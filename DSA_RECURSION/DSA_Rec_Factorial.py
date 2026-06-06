@@ -1,4 +1,4 @@
-'''Factorial of a Number : Recursive'''
+'''Factorial of a number by recursion'''
 
 # Recursive function to calculate factorial of a number
 def factorial(n):

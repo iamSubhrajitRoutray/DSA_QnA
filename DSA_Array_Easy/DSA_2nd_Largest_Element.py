@@ -1,10 +1,9 @@
 '''Given an array, find the second smallest and second largest element in the array.'''
 
 
+'''USING BUILT-IN FUNCTION ->'''
 
-''' DIRECT APPROACH -> '''
-
-array = [3,1,6,4,9,5,10,7,2,8]
+array = [3, 1, 6, 4, 9, 5, 10, 7, 2, 8]
 
 array.sort()
 
@@ -12,8 +11,7 @@ print(f'The sorted array is : {array}')
 
 ele = len(array) - 1
 
-print(f'The second largest element in the array is : {ele}')
-
+print(f'Second largest element : {ele}')
 
 
 
@@ -43,15 +41,13 @@ def second_largest(arr):
 
 array = [3, 1, 6, 4, 9, 5, 10, 7, 2, 8]
 
-print(f'The given array :')
+print(f'Given array :')
 
 second_largest(array)
 
 ele = array[len(array) - 2]
 
-print(f'second largest element in the array : {ele}')
-
-
+print(f'Second largest element : {ele}')
 
 
 
@@ -87,24 +83,8 @@ def second_largest(arr):
 
 array = [3, 1, 6, 4, 9, 5, 10, 7, 2, 8]
 
-print('The given array is :- ',array)
+print('Given array : ', array)
 
 ele = second_largest(array)
 
-print(f'The second alrgest element in the array is : {ele}')
-
-
-
-
-
-''' DIRECT APPROACH -> '''
-
-array = [3,1,6,4,9,5,10,7,2,8]
-
-array.sort()
-
-print(f'The sorted array is : {array}')
-
-ele = len(array) - 1
-
-print(f'The second largest element in the array is : {ele}')
+print(f'Second largest element : {ele}')

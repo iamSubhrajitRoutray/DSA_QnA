@@ -1,16 +1,17 @@
 '''Print N to 1 using Recursion'''
 
-def reverse_num(c_num, num):
+def reverse_num(num, n):
     
-    if c_num > num:
+    if num > n:
+        
         return
     
-    reverse_num(c_num + 1, num)
+    reverse_num(num + 1, n)
     
-    print(c_num)
+    print(num)
     
     
-# Driver code ->
+# Main/Driver code :
 val = int(input('Enter the number: '))
 
 print(f'Descending order {val} : ')

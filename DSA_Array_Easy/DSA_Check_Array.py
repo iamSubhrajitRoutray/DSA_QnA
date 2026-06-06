@@ -1,5 +1,7 @@
-'''Given an array of size n, write a program to check if the given array is sorted in (ascending) order or not.
+'''Q) Given an array of size n,
+write a program to check if the given array is sorted in (ascending) order or not.
 If the array is sorted then return True, Else return False.'''
+
 
 
 ''' BRUTE FORCE -> '''
@@ -17,8 +19,8 @@ def is_sorted(arr):
     return True
 
 
-array = [1,2,3,4,5,6]
-print('The given array is : ',array)
+array = [1, 2, 3, 4, 5, 6]
+print('Given array is : ', array)
 
 # Function call ->
 is_sorted(array)
@@ -34,12 +36,15 @@ def is_sorted(arr):
     
     n = len(arr)
     
-    for i in range(1,n):
+    for i in range(1, n):
+        
         if arr[i] < arr[i - 1]:
             return False
+    
     return True
 
-array = [1,2,3,4,5,6,7,8,9,10]
+# Main/Driver code :
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 print(array)
 

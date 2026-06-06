@@ -1,6 +1,8 @@
-'''Find the number that appears once, and the other numbers twice'''
+'''Q) Find the number that appears once, and the other numbers twice'''
 
-''' BRUTE FORCE -> '''
+
+
+''' BRUTE-FORCE APPROACH-> '''
 
 # Function to check if the number in the array appear for only one time.
 def single_element(arr):
@@ -26,7 +28,7 @@ def single_element(arr):
     return -1      # Fallback
 
 
-# Driver code ->
+# Main/Driver code : 
 array = [1, 2, 2, 1, 3]
 
 result = single_element(array)
@@ -35,7 +37,7 @@ print(result)
 
 
 
-''' OPTIMAL; USING XOR -> '''
+''' OPTIMAL APPROACH; USING XOR -> '''
 
 def single_element(arr):
     
@@ -47,6 +49,8 @@ def single_element(arr):
     
     return xorr
 
+
+# Main/Driver code : 
 array = [1, 2, 2, 1, 3]
 
 result = single_element(array)

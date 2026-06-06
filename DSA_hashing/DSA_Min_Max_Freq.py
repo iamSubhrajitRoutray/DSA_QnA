@@ -1,4 +1,5 @@
-'''Find the highest/lowest frequency element'''
+'''Q) Find the highest/lowest frequency element'''
+
 
 def frequency(arr, num):
    
@@ -51,22 +52,19 @@ def frequency(arr, num):
         
             min_freq = count
             
-        # print all the elemnets with their respective frequency
+        # Print all the elemnets with their respective frequency
         print(f'{arr[i]} : {count}')
         
-    # print the max and min element
-    print(f'Element with maximum freq is {max_ele} with {max_freq} no. of occurence')
+    # Print the max and min element
+    print(f'Element with maximum freq : {max_ele} with {max_freq} no. of occurence')
     
-    print(f'Element with minimum freq is {min_ele} with {min_freq} no. of occurence')
+    print(f'Element with minimum freq : {min_ele} with {min_freq} no. of occurence')
     
 
-# Main/Driver code
-
+# Main/Driver code : 
 arr = [1, 3, 1, 15, 3, 1, 5, 1]
 
-# Get array length
 n = len(arr)
 
-# Function call
 frequency(arr, n)
             
