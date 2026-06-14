@@ -5,9 +5,10 @@ In short, you need to return an array of all the unique triplets;
 [arr[a], arr[b], arr[c]] such that i!=j, j!=k, k!=i, and their sum is equal to zero.'''
 
 
-'''BRUTE FORCE APPROACH ->'''
 
-def threesum(arr):
+'''BRUTE-FORCE APPROACH ->'''
+
+def three_sum(arr):
     
     n = len(arr)
    
@@ -34,11 +35,50 @@ def threesum(arr):
 # Main/Driver code :
 array = [-1, 0, 1, 2, -1, -4]
 
-result = threesum(array)
+result = three_sum(array)
 print(result)
     
     
     
+    
+    
+''' BETTER APPROACH ->'''
+
+def three_sum(arr):
+    
+    n = len(arr)
+    
+    result = set()
+    
+    for i in range(n):
+        
+        my_set = set()
+        
+        for j in range(i + 1, n):
+            
+            third_element = -(arr[i] + arr[j])
+            
+            if third_element in my_set:
+                
+                temp = [arr[i], arr[j], third_element]
+                temp.sort()
+                
+                result.add(tuple(temp))
+                
+            my_set.add(arr[j])
+    
+    return [list(ans) for ans in result]
+
+
+
+# Main/Driver code :
+array = [-1, 0, 1, 2, -1, -4]
+
+sol = three_sum(array)
+print(sol)
+
+
+   
     
     
 '''OPTIMAL APPROACH ->'''
@@ -90,8 +130,3 @@ array = [-1, 0, 1, 2, -1, -4]
 
 result = three_sum(array)
 print(result)
-
-    
-    
-
-                
