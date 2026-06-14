@@ -93,7 +93,7 @@ def three_sum(arr):
     
     for i in range(n):
     
-        if arr[i] != 0 and arr[i] == arr[i-1]:
+        if arr[i] != 0 and arr[i] == arr[i - 1]:
             continue
     
         j = i + 1
@@ -110,7 +110,7 @@ def three_sum(arr):
                 k -= 1
           
             else:
-                temp = [arr[i],arr[j],arr[k]]
+                temp = [arr[i], arr[j], arr[k]]
                 ans.append(temp)
           
                 j += 1

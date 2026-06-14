@@ -30,5 +30,5 @@ def triangle(n):
 
 # Main/Driver code :
 num = 4
-ans=triangle(num)
+ans = triangle(num)
 print(ans)    
