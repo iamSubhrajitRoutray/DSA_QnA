@@ -1,4 +1,4 @@
-'''Inverted Star Pyramids'''
+'''Inverted Star Pyramids.'''
 
 class Solution:
     def pattern8(self, n):

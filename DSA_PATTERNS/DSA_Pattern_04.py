@@ -1,4 +1,4 @@
-'''Right-Angled Number Pyramid - II'''
+'''Right-Angled Number Pyramid - II.'''
 
 class Solution:
     

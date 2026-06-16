@@ -1,4 +1,4 @@
-'''Diamond Star Pattern'''
+'''Diamond Star Pattern.'''
 
 class Solution:
     

@@ -1,4 +1,4 @@
-'''Alpha-Hill Pattern'''
+'''Alpha-Hill Pattern.'''
 
 class Solution:
     

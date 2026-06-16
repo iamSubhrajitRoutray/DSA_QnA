@@ -1,4 +1,4 @@
-'''Alpha-Ramp Pattern'''
+'''Alpha-Ramp Pattern.'''
 
 class Solution:
     

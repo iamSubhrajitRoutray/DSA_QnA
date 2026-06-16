@@ -1,4 +1,4 @@
-'''Inverted Numbered Right Pyramid'''
+'''Inverted Numbered Right Pyramid.'''
 
 class Solution:
     
@@ -17,5 +17,5 @@ class Solution:
 
 # Main/Driver code :            
 obj = Solution()
-n=5
+n = 5
 obj.pattern6(n)

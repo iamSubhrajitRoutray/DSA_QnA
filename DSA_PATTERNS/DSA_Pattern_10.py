@@ -1,4 +1,4 @@
-'''Half Diamond Star Pattern'''
+'''Half Diamond Star Pattern.'''
 
 class Solution:
     

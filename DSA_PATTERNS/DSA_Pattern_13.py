@@ -1,4 +1,4 @@
-'''Increasing Number Triangle Pattern'''
+'''Increasing Number Triangle Pattern.'''
 
 class Solution():
     

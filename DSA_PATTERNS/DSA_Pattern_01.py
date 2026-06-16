@@ -1,4 +1,4 @@
-'''Rectangular Star Pattern'''
+'''Rectangular Star Pattern.'''
 
 class Solution:
     def pattern1(self, n):

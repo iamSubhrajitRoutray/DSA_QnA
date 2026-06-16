@@ -1,4 +1,4 @@
-'''Inverted Right Pyramid'''
+'''Inverted Right Pyramid.'''
 
 class Solution:
     
@@ -17,7 +17,7 @@ class Solution:
             # Move to the next line after printing the current row
             print()
             
-# Line of codes to run the above pseudo...   
+# Main/Driver code :  
 obj = Solution()
 n = 3
 obj.pattern5(n)

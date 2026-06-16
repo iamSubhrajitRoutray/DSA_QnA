@@ -1,4 +1,4 @@
-'''Star Pyramid'''
+'''Star Pyramid.'''
 
 class Solution:
     

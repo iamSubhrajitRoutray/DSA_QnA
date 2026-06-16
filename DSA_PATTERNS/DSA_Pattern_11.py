@@ -1,4 +1,4 @@
-'''Binary Number Triangle Pattern'''
+'''Binary Number Triangle Pattern.'''
 
 class Solution:
     

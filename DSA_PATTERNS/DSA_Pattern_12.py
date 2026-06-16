@@ -1,4 +1,4 @@
-'''Number Crown Pattern'''
+'''Number-Crown Pattern.'''
 
 class Solution:
     

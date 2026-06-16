@@ -1,4 +1,4 @@
-'''Right-Angled Triangle Pattern'''
+'''Right-Angled Triangle Pattern.'''
 
 class Solution:
     def pattern2(self, n):
