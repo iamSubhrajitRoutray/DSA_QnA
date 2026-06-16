@@ -1,4 +1,4 @@
-'''Q) Print all divisors of a given number'''
+'''Q) Print all divisors of a given number.'''
 
 class Divisors:
     def find_divisors(self, n):
