@@ -37,7 +37,9 @@ def second_largest(arr):
         arr[j + 1] = key
     
     print(arr)
-    
+
+
+# Main/Driver code :
 
 array = [3, 1, 6, 4, 9, 5, 10, 7, 2, 8]
 
@@ -80,6 +82,7 @@ def second_largest(arr):
     return second_largest
 
 
+# Main/Driver code :
 
 array = [3, 1, 6, 4, 9, 5, 10, 7, 2, 8]
 
@@ -88,3 +91,55 @@ print('Given array : ', array)
 ele = second_largest(array)
 
 print(f'Second largest element : {ele}')
+
+
+
+
+
+'''IMPLEMENTING OOPs CONCEPTS.'''
+
+
+from math import inf
+
+
+class Second_Largest:
+    
+    def __init__(self,arr):
+        self.arr = arr
+    
+    def element(self):
+        
+        num = len(self.arr)
+        
+        largest = float(-inf)
+        second_large = float(-inf)
+        
+        solve_arr = self.arr
+        
+        for i in range(num):
+            if solve_arr[i] > largest:
+                
+                second_large = largest
+                largest = solve_arr[i]
+                
+            elif solve_arr[i] > second_large and solve_arr[i] != largest:
+                second_large = solve_arr[i]
+                
+        return second_large
+    
+    def display(self):
+       
+        print(f"Given array : {self.arr}")
+        
+        ele = self.element()
+        
+        print(f"Second largest element in array : {ele}")
+        
+
+# Main/Driver code :
+
+array = [3, 1, 6, 4, 9, 5, 10, 7, 2, 8]
+
+answer = Second_Largest(array)
+
+answer.display()       
