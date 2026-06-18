@@ -1,27 +1,28 @@
 '''Q) Factorial of a given number.'''
 
-# num = int(input('Enter the number : '))
+num = int(input('Enter the number : '))
     
-# fact = 1
+fact = 1
 
-# while (num > 0):
+while (num > 0):
 
-#     fact *= num
+    fact *= num
 
-#     num -= 1
+    num -= 1
 
-# print(f"Factorial : {fact}")
-
-
+print(f"Factorial : {fact}")
 
 
 
-'''Implementing OOPs concepts ->'''
+
+
+'''IMPLEMENTING OOPs CONCEPTS : '''
+
+
 
 class Factorial:
         
     def __init__(self, num):
-        
         self.num = num
         
     def find_factorial(self):

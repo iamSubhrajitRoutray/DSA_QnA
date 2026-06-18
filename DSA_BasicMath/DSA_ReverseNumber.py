@@ -35,8 +35,8 @@ print(f'Reverse of the number : {rev_num}')
 
 
 
+''' IMPLEMENTING OOPs CONCEPTS : '''
 
-'''Implementing OOPs concepts ->'''
 
 class Reversal:
     

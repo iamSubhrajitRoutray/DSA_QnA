@@ -33,12 +33,12 @@ else:
         
             
             
-'''Implementing OOPs conpects ->'''
+''' IMPLEMENTING OOPs CONCEPTS : '''
+
 
 class Armstrong:
     
     def __init__(self, num):
-        
         self.num = num
         
         

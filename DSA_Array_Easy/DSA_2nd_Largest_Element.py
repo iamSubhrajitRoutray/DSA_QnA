@@ -96,7 +96,7 @@ print(f'Second largest element : {ele}')
 
 
 
-'''IMPLEMENTING OOPs CONCEPTS.'''
+''' IMPLEMENTING OOPs CONCEPTS : '''
 
 
 from math import inf

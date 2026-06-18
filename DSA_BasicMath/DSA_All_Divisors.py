@@ -30,7 +30,8 @@ print(f"Divisors are : {result}.")
 
 
 
-'''Implementing OOPs conpects->'''
+''' IMPLEMENTING OOPs CONCEPTS : '''
+
 
 class Find_Divisors:
     

@@ -37,12 +37,12 @@ else:
     
     
     
-'''Implementing OOPs concepts ->'''
+''' IMPLEMENTING OOPs CONCEPTS : '''
+
 
 class Palindrome:
     
     def __init__(self, num):
-        
         self.num = num
         
     def check_palindrome(self):

@@ -55,7 +55,7 @@ print('True' if is_sorted(array) else 'False')
 
 
 
-'''IMPLEMENTING OOPs CONCEPTS.'''
+''' IMPLEMENTING OOPs CONCEPTS : '''
 
 
 # BRUTE FORCE APPROACH ->
