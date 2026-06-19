@@ -74,7 +74,6 @@ print(f'Largest element : {ele}')
 
 
 
-
 '''IMPLEMENTING OOPs CONCEPTS.'''
 
 # OPTIMAL APPROACH ->
@@ -112,3 +111,49 @@ array = [3, 6, 2, 5, 1, 8, 4, 9]
 result = Element(array)
 
 result.display()
+
+
+
+
+# BRUTE FORCE APPROACH ->
+
+
+class Element:
+    
+    def __init__(self, arr):
+        self.arr = arr
+        
+    def largest(self):
+        
+        num = len(self.arr)
+        
+        for i in range(num):
+            
+            min_index = i
+            
+        
+            for j in range(i + 1, num):
+            
+                if self.arr[j] < self.arr[min_index]:
+                    
+                    min_index = j
+        
+            self.arr[i], self.arr[min_index] = self.arr[min_index], self.arr[i]
+            
+        ele = self.arr[-1]
+        
+        return ele
+        
+    def display(self):
+        
+        print(f"Given array : {self.arr}")
+        
+        print(f"Largest element in array : {self.largest()}")
+        
+        
+# Main/Driver code :
+
+array = [3, 6, 1, 8, 2, 7, 4]
+
+answer = Element(array)
+answer.display()   

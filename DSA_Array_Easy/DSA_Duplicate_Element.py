@@ -117,6 +117,9 @@ result = Element(array)
 result.display()
 
 
+
+# BRUTE FORCE APPRAOCH ->
+
 class Element:
 
     def __init__(self, arr):
