@@ -26,7 +26,7 @@ def remove_duplicate(arr):
         
         j += 1
     
-    return print(f'Resultant array : {j}.')
+    return print(f"Total no. of elements : {j}.")
 
 # Main/Driver code :
 array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
@@ -59,7 +59,7 @@ def duplicate(arr):
         
         j += 1
     
-    return print(f'Resultant array : {i + 1}')
+    return print(f"Actual no. of elements : {i + 1}")
     
     
 # Main/Driver code :
@@ -67,3 +67,51 @@ array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
 
 duplicate(array)
 
+
+
+
+'''IMPLEMENTING OOPs CONCEPTS.'''
+
+
+# OPTIMAL APPROACH -> 
+
+class Element:
+    
+    def __init__(self,arr):
+        self.arr = arr
+    
+    def duplicate(self):
+        
+        n = len(self.arr)
+
+        i = 0
+        j = i + 1
+        
+        while j < n:
+            
+            if self.arr[j] != self.arr[i]:
+                
+                i += 1
+                
+                self.arr[i], self.arr[j] = self.arr[j], self.arr[i]
+            
+            j += 1
+            
+        return (i + 1)
+    
+    
+    def display(self):
+    
+        print(f"Given array : {self.arr}")
+        
+        answer = self.duplicate()
+        
+        print(f" No. of original elements : {answer}")
+        
+
+# Main/Driver code :
+
+array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
+
+result = Element(array)
+result.display()
