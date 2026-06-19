@@ -46,16 +46,16 @@ print(f'Largest element : {ele}')
 
 def largest_element(arr):
     
-    max = arr[0]     # We set a variable named max to be the value at index 0
+    max_ele = arr[0]     # We set a variable named max to be the value at index 0
     
     n = len(arr)
     
     for i in range(1, n):        # This loop runs for i from index 1 to n-1
         
-        if arr[i] > max:         # if the value of i at any index other than the max found to be greater then ->
-            max = arr[i]         # we set that value to be the max value
+        if arr[i] > max_ele:         # if the value of i at any index other than the max found to be greater then ->
+            max_ele = arr[i]         # we set that value to be the max value
             
-    return max                   # in the end we return the max value
+    return max_ele                   # in the end we return the max value
 
 
 
@@ -68,3 +68,47 @@ print('Given array : ', array)
 ele = largest_element(array)
 
 print(f'Largest element : {ele}')
+
+
+
+
+
+
+
+'''IMPLEMENTING OOPs CONCEPTS.'''
+
+# OPTIMAL APPROACH ->
+
+class Element:
+    
+    def __init__(self,arr):
+        self.arr = arr
+        
+    def largest(self):
+        
+        max_ele = self.arr[0]
+        
+        n = len(self.arr)
+        
+        for i in range(1, n):
+            
+            if self.arr[i] > max_ele:
+            
+                max_ele = self.arr[i]
+            
+        return max_ele
+    
+    def display(self):
+        
+        print(f"Given array : {self.arr}")
+        
+        print(f"Largest element : {self.largest()}")
+        
+        
+# Main/Driver code :
+
+array = [3, 6, 2, 5, 1, 8, 4, 9]
+
+result = Element(array)
+
+result.display()
