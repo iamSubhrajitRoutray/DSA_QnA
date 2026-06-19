@@ -115,3 +115,45 @@ array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
 
 result = Element(array)
 result.display()
+
+
+class Element:
+
+    def __init__(self, arr):
+        self.arr = arr
+        
+    def duplicate(self):
+    
+        n = len(self.arr)
+    
+        freq_list = {}
+    
+        for i in range(n):
+    
+            freq_list[self.arr[i]] = 0
+        
+        j = 0
+    
+        for key in freq_list:
+        
+            self.arr[j] = key
+        
+            j += 1
+    
+        return j
+    
+    def display(self):
+        
+        print(f"Given array : {self.arr}")
+        
+        answer = self.duplicate()
+        
+        print(f"No. of original elements : {answer}")
+
+
+# Main/Driver code :
+
+array = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4]
+
+result = Element(array)
+result.display()
