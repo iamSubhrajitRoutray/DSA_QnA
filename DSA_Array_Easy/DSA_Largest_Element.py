@@ -4,7 +4,7 @@
 
 ''' BRUTE FORCE APPROACH -> '''
 
-# Function to find the largest element
+# Function to find the largest element.
 def largest_elemnt(arr):
     
     n = len(arr)
