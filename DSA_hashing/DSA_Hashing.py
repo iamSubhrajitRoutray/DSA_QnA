@@ -16,18 +16,20 @@ for num in hash_arr:
     
     count = 0
     
-    # for index taken as i (variable) to search over the given array
+    # For index taken as i (variable) to search over the given array
     for i in arr:
         
-        #if our number in hash array matches the number in given array...
+        # If our number in hash array matches the number in given array...
         if i == num:
             
-            #...increase the count by +1
+            # Increase the count by +1
             count += 1
         
     print(count)
+  
+  
     
-arr =[]
+arr = []
 
 num = int(input('Enter the lenght of your array: '))
 
