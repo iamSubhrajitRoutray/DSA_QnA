@@ -5,7 +5,9 @@ your task is to search for the target in the given array.
 Assume the given array does not contain any duplicate numbers.'''
 
 
+
 '''ITERATIVE METHOD'''
+
 
 def search(arr, target):
     
@@ -32,8 +34,9 @@ def search(arr, target):
 
 
 
-'''RECURSIVE METHOD'''
 
+
+'''RECURSIVE METHOD'''
 
 
 def search(arr, low, high, target):
