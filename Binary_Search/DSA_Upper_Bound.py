@@ -40,11 +40,11 @@ array = [1, 2, 2, 3]
 
 x = 2  # Target element
 
-result = upper_bound(array, x)
+answer = upper_bound(array, x)
 
 print(f"Given array : {array}")
 
-print(f"The upper bound index is : {result}")
+print(f"The upper bound index is : {answer}")
 
 
 
