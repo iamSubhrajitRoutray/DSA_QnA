@@ -29,12 +29,13 @@ x = 3
 
 answer = count(array, x)
 
-print(f"{x} appeared {answer} times in the array.")
+print(f"Number {x} appeared {answer} times in the array.")
 
 
 
 
 '''OPTIMAL APPROACH'''
+
 
 class Occurrence:
     
