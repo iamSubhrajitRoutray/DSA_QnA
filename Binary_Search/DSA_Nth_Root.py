@@ -1,9 +1,9 @@
 '''
-
 Q)
 Given two numbers N and M, find the Nth root of M.
 The nth root of a number M is defined as a number X when raised to the power N equals M.
 If the 'nth root is not an integer, return -1.'''
+
 
 
 
@@ -23,12 +23,16 @@ def find_root(m, n):
     return -1
 
 
-
 # Main/Driver code :
 n = 3
 m = 27
 
-print(find_root(m, n))
+result = find_root(m, n)
+
+if result == -1:
+    print("The Nth root of given number cannot be determined.")
+else:
+    print(f"Root {n} of {m} is {result}")
 
 
 
@@ -69,4 +73,9 @@ def find_root(m, n):
 n = 3
 m = 27
 
-print(find_root(m, n))
+result = find_root(m, n)
+
+if result == -1:
+    print("The Nth root of given number cannot be determined.")
+else:
+    print(f"Root {n} of {m} is {result}")
