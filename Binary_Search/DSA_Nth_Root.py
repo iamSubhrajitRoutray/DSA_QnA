@@ -31,6 +31,7 @@ print(find_root(m, n))
 
 
 
+
 '''OPTIMAL APPROACH'''
 
 def find_root(m, n):
@@ -41,21 +42,24 @@ def find_root(m, n):
     
     while low <= high:
         
-        mid = (low+high)//2
+        mid = (low + high) // 2
+        
         ans = 1
         
-        ans = ans * mid
+        for _ in range(n):
+            
+            ans = ans * mid
 
-        if ans > mid:
-            break
+            if ans > m:
+                break
         
-        if ans == n:
+        if ans == m:
             return mid
      
-        if ans < mid:
-            high = mid-1
+        if ans < m:
+            low = mid + 1
         else:
-            low=mid+1
+            high = mid - 1
             
     return -1
 
