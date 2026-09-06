@@ -17,7 +17,9 @@ def check_odd_even(num):
 # MAIN/DRIVER CODE:
 
 number = 5
+
 answer = check_odd_even(number)
+
 print(f"\n{answer}\n")
     
     
