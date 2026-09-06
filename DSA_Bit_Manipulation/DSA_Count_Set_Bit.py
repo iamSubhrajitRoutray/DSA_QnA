@@ -23,6 +23,7 @@ def count_set(num):
             count += 1
         
         else:
+            
             res += "0"
         
         num //= 2
@@ -33,7 +34,6 @@ def count_set(num):
 
 
 # MAIN/DRIVER CODE:
-
 
 number = 13
 
