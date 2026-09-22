@@ -29,7 +29,6 @@ def backtrack(index, total):
     return not_pick
     
     
-    
 
 # MAIN/DRIVER CODE:
 
