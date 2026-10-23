@@ -47,3 +47,19 @@ def convert(string):
             
             stack.append(char)
         
+        else:
+            
+            op1 = stack.pop()
+            op2 = stack.pop()
+            
+            new_expr = op1 + op2 + char
+            
+            stack.append(new_expr)
+    
+    return stack[-1]
+
+
+
+            
+                        
+            

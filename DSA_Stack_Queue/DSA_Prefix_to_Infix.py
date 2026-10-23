@@ -57,5 +57,4 @@ s = "+A*BC"
 
 answer = convert(s)
 
-
 print(f"\nConverting {s} from prefix to infix gives : {answer}\n")
