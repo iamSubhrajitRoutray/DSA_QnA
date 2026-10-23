@@ -60,6 +60,13 @@ def convert(string):
 
 
 
+# NEW/MAIN DRIVER:
+
+s = "*-A/BC-/AKL"
+
+answer = convert(s)
+
+print(f"\nConverting {s} from prefix to postfix gives : {answer}\n")
             
                         
             
